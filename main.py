@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.post("/what_language_is_this")
 async def root():
-    return {"predictions":[
+    return [
         {"class":"German","value":0.1},
         {"class":"Esperanto","value":0.1},
         {"class":"French","value":0.1},
@@ -12,4 +12,4 @@ async def root():
         {"class":"Spanish","value":0.1},
         {"class":"Turkish","value":0.1},
         {"class":"English","value":0.1}
-    ]}
+    ]
